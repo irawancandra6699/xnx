@@ -22,7 +22,7 @@ BURIQ () {
 }
 # https://raw.githubusercontent.com/arismaramar/supreme/aio/permission/ip 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/arismaramar/supreme/aio/permission/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/irawancandra6699/xnx/aio/permission/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -39,7 +39,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/arismaramar/supreme/aio/permission/ip | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/irawancandra6699/xnx/aio/permission/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -163,7 +163,7 @@ mkdir -p /var/lib/ >/dev/null 2>&1
 echo "IP=" >> /var/lib/ipvps.conf
 
 echo ""
-#wget -q https://raw.githubusercontent.com/arismaramar/supreme/aio/tools.sh;chmod +x tools.sh;./tools.sh
+#wget -q https://raw.githubusercontent.com/irawancandra6699/xnx/aio/tools.sh;chmod +x tools.sh;./tools.sh
 #rm tools.sh
 clear
 red "Tambah Domain Untuk XRAY"
@@ -188,15 +188,15 @@ echo -e "$green      Install SSH Websocket               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 0.5
 clear
-wget -O ssh-vpn.sh https://raw.githubusercontent.com/arismaramar/supreme/aio/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget -O ssh-vpn.sh https://raw.githubusercontent.com/irawancandra6699/xnx/aio/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 0.5
 clear
-wget -O ins-xray.sh https://raw.githubusercontent.com/arismaramar/supreme/aio/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget -O  insshws.sh https://raw.githubusercontent.com/arismaramar/supreme/aio/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget -O ins-xray.sh https://raw.githubusercontent.com/irawancandra6699/xnx/aio/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget -O  insshws.sh https://raw.githubusercontent.com/irawancandra6699/xnx/aio/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
@@ -223,7 +223,7 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/arismaramar/supreme/aio/permission/versi  )
+serverV=$( curl -sS https://raw.githubusercontent.com/irawancandra6699/xnx/aio/permission/versi  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
